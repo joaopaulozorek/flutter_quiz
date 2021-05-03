@@ -12,7 +12,12 @@ class Quizzler extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.grey.shade900,
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Colors.blueGrey.shade700,
+          title: Text('QuizApp'),
+        ),
+        backgroundColor: Colors.blueGrey.shade400,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 10),
